@@ -88,3 +88,11 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Auto generated files
+**/Generated/*
+!**/Generated/.gitkeep
+
+## Bundler
+/vendor/bundle
+/vendor/bin
