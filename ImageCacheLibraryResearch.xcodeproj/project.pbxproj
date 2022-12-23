@@ -14,6 +14,12 @@
 		75BFFFA82955507A00745583 /* ImageCacheLibraryResearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFFFA72955507A00745583 /* ImageCacheLibraryResearchTests.swift */; };
 		75BFFFB22955507A00745583 /* ImageCacheLibraryResearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFFFB12955507A00745583 /* ImageCacheLibraryResearchUITests.swift */; };
 		75BFFFB42955507A00745583 /* ImageCacheLibraryResearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFFFB32955507A00745583 /* ImageCacheLibraryResearchUITestsLaunchTests.swift */; };
+		75BFFFC229555EFF00745583 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFC129555EFF00745583 /* Nuke */; };
+		75BFFFC429555EFF00745583 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFC329555EFF00745583 /* NukeExtensions */; };
+		75BFFFC629555EFF00745583 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFC529555EFF00745583 /* NukeUI */; };
+		75BFFFC929555F6600745583 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFC829555F6600745583 /* SDWebImage */; };
+		75BFFFCC29555F8800745583 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFCB29555F8800745583 /* SDWebImageSwiftUI */; };
+		75BFFFCF2955606E00745583 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 75BFFFCE2955606E00745583 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BFFFCF2955606E00745583 /* Kingfisher in Frameworks */,
+				75BFFFCC29555F8800745583 /* SDWebImageSwiftUI in Frameworks */,
+				75BFFFC629555EFF00745583 /* NukeUI in Frameworks */,
+				75BFFFC229555EFF00745583 /* Nuke in Frameworks */,
+				75BFFFC929555F6600745583 /* SDWebImage in Frameworks */,
+				75BFFFC429555EFF00745583 /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +155,14 @@
 			dependencies = (
 			);
 			name = ImageCacheLibraryResearch;
+			packageProductDependencies = (
+				75BFFFC129555EFF00745583 /* Nuke */,
+				75BFFFC329555EFF00745583 /* NukeExtensions */,
+				75BFFFC529555EFF00745583 /* NukeUI */,
+				75BFFFC829555F6600745583 /* SDWebImage */,
+				75BFFFCB29555F8800745583 /* SDWebImageSwiftUI */,
+				75BFFFCE2955606E00745583 /* Kingfisher */,
+			);
 			productName = ImageCacheLibraryResearch;
 			productReference = 75BFFF932955507400745583 /* ImageCacheLibraryResearch.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,12 @@
 				Base,
 			);
 			mainGroup = 75BFFF8A2955507400745583;
+			packageReferences = (
+				75BFFFC029555EFF00745583 /* XCRemoteSwiftPackageReference "Nuke" */,
+				75BFFFC729555F6500745583 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				75BFFFCA29555F8800745583 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				75BFFFCD2955606E00745583 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 75BFFF942955507400745583 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +609,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75BFFFC029555EFF00745583 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		75BFFFC729555F6500745583 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		75BFFFCA29555F8800745583 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		75BFFFCD2955606E00745583 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75BFFFC129555EFF00745583 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFC029555EFF00745583 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		75BFFFC329555EFF00745583 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFC029555EFF00745583 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		75BFFFC529555EFF00745583 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFC029555EFF00745583 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		75BFFFC829555F6600745583 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFC729555F6500745583 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		75BFFFCB29555F8800745583 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFCA29555F8800745583 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		75BFFFCE2955606E00745583 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BFFFCD2955606E00745583 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75BFFF8B2955507400745583 /* Project object */;
 }
