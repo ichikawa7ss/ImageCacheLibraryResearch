@@ -11,7 +11,7 @@ import SwiftUI
 struct ImageCacheLibraryResearchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuList()
         }
     }
 }
