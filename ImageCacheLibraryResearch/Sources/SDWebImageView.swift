@@ -24,9 +24,13 @@ struct SDWebImageView: View {
       LazyVGrid(columns: [GridItem(.adaptive(minimum: 100, maximum: 200))]) {
         ForEach((1...50), id: \.self) { index in
           let url = "https://picsum.photos/id/\(index)/\(String(itemWidth))/\(String(itemHeight))"
-          WebImage(url: .init(string: url), options: SDWebImageOptions.allowInvalidSSLCertificates, context: [
-          ])
-            .frame(width: CGFloat(itemWidth), height: CGFloat(itemHeight))
+          WebImage(
+            url: .init(string: url),
+            options: SDWebImageOptions.allowInvalidSSLCertificates,
+            context: [:]
+          )
+          .indicator(.activity)
+          .frame(width: CGFloat(itemWidth), height: CGFloat(itemHeight))
         }
       }
     }
