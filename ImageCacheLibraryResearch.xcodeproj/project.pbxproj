@@ -57,7 +57,7 @@
 		75BFFFD1295575A300745583 /* AsyncImageView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		75BFFFD3295575AB00745583 /* NukeView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NukeView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		75BFFFD5295575B600745583 /* SDWebImageView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SDWebImageView.swift; sourceTree = "<group>"; tabWidth = 2; };
-		75BFFFD7295575C500745583 /* KingfisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherView.swift; sourceTree = "<group>"; };
+		75BFFFD7295575C500745583 /* KingfisherView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = KingfisherView.swift; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
